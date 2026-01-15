@@ -1,0 +1,26 @@
+package com.runnableandcallable;
+
+import java.util.concurrent.Callable;
+
+class TaskRunnnable implements Runnable {
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+class TaskCallable implements Callable<String>{
+	@Override
+	public String call() throws Exception {
+		// TODO Auto-generated method stub
+		return "Task Done";
+	}
+}
+public class RunnableAndCallableInterfaceExamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

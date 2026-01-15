@@ -1,0 +1,24 @@
+package com.waitandnotify;
+
+class Task implements Runnable {
+	@Override
+	public void run() {
+	String name = Thread.currentThread().getName();
+	for(int i=0;i<=10;i++) {
+		System.out.println(name+" "+i);
+		try {
+			Thread.sleep(500);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	}
+}
+public class WaitAndNotifyExamples {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

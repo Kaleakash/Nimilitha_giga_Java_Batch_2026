@@ -1,0 +1,45 @@
+package com.runnableandcallable;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+class TaskRunnnable implements Runnable {
+	@Override
+	public void run() {
+		Thread t = Thread.currentThread();
+		System.out.println("Using Runnable "+t);
+	}
+}
+class TaskCallable implements Callable<String>{
+	@Override
+	public String call() throws Exception {
+		Thread t = Thread.currentThread();
+		System.out.println("Using Callable "+t);
+		return "Task Done "+t.getName();
+	}
+}
+public class RunnableAndCallableInterfaceExamples {
+
+	public static void main(String[] args) throws Exception{
+	TaskRunnnable tr = new  TaskRunnnable();
+	//Thread t1 = new Thread(tr);
+	//t1.start();
+	TaskCallable tc = new TaskCallable();
+	System.out.println("Creating thread of Runnable or Callable using Executor Framework");
+		ExecutorService es=	Executors.newSingleThreadExecutor();
+//		es.submit(tr);
+//		es.submit(tc);
+		
+		Future<String>ff =  es.submit(tc);
+		System.out.println(ff.get());
+	}
+
+}
+
+
+
+
+
+
