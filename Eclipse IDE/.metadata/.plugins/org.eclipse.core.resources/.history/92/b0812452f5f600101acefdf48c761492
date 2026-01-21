@@ -1,0 +1,20 @@
+package com.threadfactoryexamples;
+
+import java.util.concurrent.ThreadFactory;
+
+class CustomThreadFactory implements ThreadFactory {
+
+    private int count = 1;
+
+   
+}
+
+
+public class ThreadFactoryExamples {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
