@@ -4,6 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 class AtomicCounter {
     AtomicInteger count = new AtomicInteger(0);
 	//static int count=0;
+    
     void increment() {
         count.incrementAndGet();
     	//count++;

@@ -7,10 +7,14 @@
     <fullyQualifiedTypeName name="com.runnableandcallable.TaskRunnnable"/>
     <fullyQualifiedTypeName name="com.runnableandcallable.TaskCallable"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Future"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Callable"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
     <fullyQualifiedTypeName name="java.util.concurrent.ScheduledExecutorService"/>
-    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ThreadFactory"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="com.threadfactoryexamples.CustomThreadFactory"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicInteger"/>
+    <fullyQualifiedTypeName name="com.advsynchronization.AtomicCounter"/>
 </qualifiedTypeNameHistroy>
